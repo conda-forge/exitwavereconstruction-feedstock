@@ -1,5 +1,5 @@
 {% set name = "ExitWaveReconstruction" %}
-{% set version = "1.1" %}
+{% set version = "1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/CDoberstein/ExitWaveReconstruction/archive/v{{ version }}.tar.gz
-  sha256: 0743821181713dea7203e5e2f6eaa3984ed923c6719a9bbbc5b005e45ae9dd49  
+  sha256: fcb2f6a41c920807c5395070e03502c46ffcf8e32bb9940b4997f6f0ce1c4db2
 
 build:
-  number: 2
+  number: 0
   skip: true  # [not linux]
 
 requirements:
@@ -47,7 +47,7 @@ about:
   home: https://github.com/CDoberstein/ExitWaveReconstruction
   license: CDDL-1.0
   license_file: LICENSE.txt
-  summary: 'Exit wave reconstruction from transmission electron microscopy focal series'
+  summary: Exit wave reconstruction from transmission electron microscopy focal series
 
   description: |
     Exit wave reconstruction from transmission electron microscopy focal series
